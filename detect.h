@@ -1,11 +1,7 @@
-#include <tuple>
 #include <iostream>
-#include <array>
 #include <utility>
 #include <vector>
-#include <thread>
-#include <memory>
-#include <mutex>
+
 
 using std::cout;
 using std::vector;
@@ -29,7 +25,8 @@ struct Detect<Outer<Inner>>
 
 int main()
 {
-    cout << std::is_same<int, utils::Detect<vector<int>>::type>::value << '\n';
-    cout << std::is_same<int, utils::Detect<vector<vector<int>>>::type>::value << '\n';
+    cout << std::is_same<int, utils::Detect<vector<int>>::type>::value << "\n";
+    cout << std::is_same<int, utils::Detect<vector<vector<int>>>::type>::value << "\n";
+    
     
 }
